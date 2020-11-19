@@ -13,10 +13,30 @@ class miCard extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Container(color: Colors.red, child: Text("Herro")),
+          child: Column(
+            children: [
+              Container(
+                color: Colors.red,
+                child: Text("Container 1"),
+                height: 100.0,
+                width: 100.0,
+              ),
+              Container(
+                color: Colors.blue,
+                child: Text("Container 2"),
+                height: 100.0,
+                width: 100.0,
+              ),
+              Container(
+                color: Colors.yellow,
+                child: Text("Container 3"),
+                height: 100.0,
+                width: 100.0,
+              ),
+            ],
+          ),
         ),
       ),
     );
   }
 }
- 
