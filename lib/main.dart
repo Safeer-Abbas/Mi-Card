@@ -1,3 +1,6 @@
+import 'dart:html';
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,28 +18,19 @@ class miCard extends StatelessWidget {
         body: SafeArea(
           child: Column(
             children: [
-              Container(
-                color: Colors.red,
-                child: Text("Container 1"),
-                height: 100.0,
-                width: 100.0,
+              Center(
+                child: CircleAvatar(
+                  backgroundImage: ExactAssetImage('assets/Safeer_Abbas.png'),
+                  radius: 100,
+                ),
               ),
-              Container(
-                color: Colors.blue,
-                child: Text("Container 2"),
-                height: 100.0,
-                width: 100.0,
-              ),
-              Container(
-                color: Colors.yellow,
-                child: Text("Container 3"),
-                height: 100.0,
-                width: 100.0,
-              ),
-            ],
-          ),
+              Text("Hello There Safee")
+
+
+            ],)
         ),
       ),
-    );
+    ); 
   }
 }
+  
